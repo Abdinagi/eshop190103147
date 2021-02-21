@@ -1,0 +1,295 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    width: 100%;
+    position: absolute;
+    padding: 30px 100px;
+}
+.navbar .menu li a{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 10px;
+    color:white;
+}
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .logo a{
+    margin-left: -420px;
+    padding-left: 0 20px;
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.navbar .logo a span{
+    color: crimson;
+
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar .max-width{
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/*Home*/
+
+.home{
+    display: flex;
+    background-image: url(https://wallpaperhunt.net/save/wallpaper?f=20881-coding-wallpaper-1920x1080-158706302016083.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    color: white;
+}
+.home .max-width{
+    margin: auto 0 auto 200px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{ 
+    font-size: 50px;
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+    font-size: 45px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: white;
+    background: none;
+}
+
+/* about section styling */
+.about{
+    margin-top: 100px;
+}
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*for section*/
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+/* skills section styling */
+
+.skills{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(100% - 30px);
+}
+.skills .skills-content .left .text{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .php::before{
+    width: 40%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.foot .footLogo{
+    padding-top: 50px;
+    margin-left: 800px;
+}
+.foot .social{
+    margin-top: 20px;
+    margin-left: 745px;
+}
+.foot .social a{
+    padding: 0 20px;
+}
+.foot .social img:hover{
+    background:crimson;
+    border-radius: 50%;
+}
+.foot p{
+    padding: 10px 0;
+    margin-left: 765px;
+    color: white;
+}
+.foot p span{
+    color: crimson;
+}
+.line { 
+    border-left: 2px solid #fff; 
+    padding-left: 10px;
+   }
