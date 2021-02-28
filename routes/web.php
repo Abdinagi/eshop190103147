@@ -34,3 +34,7 @@ Route::get('/skill', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+Route::get('/exam', function () {
+    return view('example');
+});
