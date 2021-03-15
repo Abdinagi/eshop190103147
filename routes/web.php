@@ -58,5 +58,6 @@ Route::get('post', function () {
     return $post;
 });
 
-Route::get('client', [ClientController::class, 'index']);
+Route::get('post', [ClientController::class, 'index']);
+
 
