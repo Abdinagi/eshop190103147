@@ -60,4 +60,9 @@ Route::get('post', function () {
 
 Route::get('post', [ClientController::class, 'index']);
 
+Route::get('post/create', function() {
+    return view('post.create');
+});
 
+Route::post('post/create', [ClientController::class, 'store'])->name('add-post'); 
+    
