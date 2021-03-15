@@ -65,4 +65,6 @@ Route::get('post/create', function() {
 });
 
 Route::post('post/create', [ClientController::class, 'store'])->name('add-post'); 
-    
+
+Route::get('post/{id}', [ClientController::class, 'get_post']);
+
