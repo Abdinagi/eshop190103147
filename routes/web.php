@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\DB;
 
 use App\Models\Post;
 
+use App\Http\Controllers\ClientController;
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -53,3 +57,6 @@ Route::get('post', function () {
     $post = Post::find(1);
     return $post;
 });
+
+Route::get('client', [ClientController::class, 'index']);
+
