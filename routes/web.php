@@ -3,6 +3,14 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
+
+
+use App\Models\users8;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\MailController;
+
+
+
 use App\Models\Post;
 
 use App\Http\Controllers\ClientController;
@@ -53,6 +61,8 @@ Route::get('post/create', function () {
     ]);
 });
 
+
+
 Route::get('post', function () {
     $post = Post::find(1);
     return $post;
@@ -68,3 +78,14 @@ Route::post('post/create', [ClientController::class, 'store'])->name('add-post')
 
 Route::get('post/{id}', [ClientController::class, 'get_post']);
 
+
+
+// Lab8
+Route::get('user', [UserController::class, 'index']); //shows all users in the html plain, for more infos go to the UserController
+Route::get('user/form', function(){
+     return view('user.form'); // for displaying form
+});
+
+Route::post('user/form', [UserController::class, 'store'])->name('add-user'); // uploading file and other columns
+
+Route::get('email/sending', [MailController::class, 'send']);

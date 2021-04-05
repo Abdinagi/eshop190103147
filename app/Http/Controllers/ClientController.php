@@ -23,6 +23,10 @@ class ClientController extends Controller
         return back();
     }
 
+
+
+
+    
     public function get_post($id){
         $post = Post::find($id);
 

@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
+<nav class="navbar">
         <div class="max-width">
             <div class="logo">
-<a href="#">Portfo<span>lio.</span></a></div>
+<a href="#"><span></span></a></div>
 <ul class="menu">
 <li><a href="#home" class="home1">Home</a></li>
 <li><a href="#about" class="about">About</a></li>
@@ -22,20 +22,7 @@
 </div>
 </nav>
 
-<!--home section-->
-<section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">
-                    Hello, my name is</div>
-                <div class="text-2">
-                    Abdinagi Nurshat</div>
-                <div class="text-3">
-                    And I'm a <span class="typing">Web programmer</span></div>
-                <a href="#">Hire me</a>
-            </div>
-</div>
-</section>   
+ 
 
 
 <!--about section-->
@@ -58,4 +45,3 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eve
 </div>
 </section>
 
-<hr style="margin-top: 60px;">
